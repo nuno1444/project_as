@@ -21,6 +21,44 @@ class MainActivity : AppCompatActivity() {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
             auth?.signOut()
+
+        }
+
+        with(supportFragmentManager.beginTransaction()){
+            val fragment1= Fragment1()
+            replace(R.id.container,fragment1)
+            commit()
+        }
+        bottom_navigation.setOnNavigationItemReselectedListener {
+            when(it.itemId)
+            {
+                R.id.tab1 ->{
+                    with(supportFragmentManager.beginTransaction()){
+                        val fragment1= Fragment1()
+                        replace(R.id.container,fragment1)
+                        commit()
+                    }
+                    return@setOnNavigationItemReselectedListener
+                }
+                R.id.tab2 ->{
+                    with(supportFragmentManager.beginTransaction()){
+                        val fragment2= Fragment2()
+                        replace(R.id.container,fragment2)
+                        commit()
+                    }
+                    return@setOnNavigationItemReselectedListener
+                }
+                R.id.tab3 ->{
+                    with(supportFragmentManager.beginTransaction()){
+                        val fragment3= Fragment3()
+                        replace(R.id.container,fragment3)
+                        commit()
+                    }
+                    return@setOnNavigationItemReselectedListener
+                }
+
+            }
+            return@setOnNavigationItemReselectedListener
         }
     }
 }
