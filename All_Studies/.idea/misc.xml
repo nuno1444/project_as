@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/nuno1/AndroidStudioProjects/All_Studies/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.28205128205128205" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2864583333333333" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.2864583333333333" />
       </map>
     </option>
   </component>
