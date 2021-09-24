@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_mypage.*
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),FragmentCallback {
     private lateinit var auth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
