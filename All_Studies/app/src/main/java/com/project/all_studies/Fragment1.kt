@@ -48,7 +48,7 @@ class Fragment1 : Fragment() {
         adapter.items.add(Study("Nuno","224555"))
         adapter.listener = object :StudyListItemClickListener{
             override fun onItemClick(holder: StudyAdapter.ViewHolder?, view: View?, position: Int) {
-                showToast("click list")
+                //showToast("click list")
 
                 if (callback != null) {
                     val bundle = Bundle()
