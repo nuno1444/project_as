@@ -3,23 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/tab1"
-        app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@android:drawable/ic_media_play"
-        android:title="동영상"
-        />
+        android:icon="@drawable/ic_baseline_home_24"
+
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/tab2"
-        app:showAsAction="ifRoom"
-        android:icon="@android:drawable/ic_menu_gallery"
-        android:title="사진"
-        />
+        android:icon="@drawable/ic_baseline_menu_book_24"
+
+
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/tab3"
-        app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@android:drawable/ic_popup_reminder"
-        android:title="알림"
-        />
+        android:icon="@drawable/ic_baseline_face_24"
+
+
+        app:showAsAction="ifRoom" />
 
 </menu>
