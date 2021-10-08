@@ -49,6 +49,11 @@ class LoginActivity : AppCompatActivity() {
         googleSignInClient = GoogleSignIn.getClient(this, gso)
     }
 
+    public override fun onStart() {
+        super.onStart()
+        moveMainPage(auth?.currentUser)
+    }
+
     // 로그인
     private fun signIn(id: String, pw: String) {
         if (id.isNotEmpty() && pw.isNotEmpty()) {
